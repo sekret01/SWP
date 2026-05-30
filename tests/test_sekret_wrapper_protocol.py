@@ -1,8 +1,8 @@
 import pytest
 
-from sekret_wrapper_protocol.sekret_wrapper_protocol import SWP
-from sekret_wrapper_protocol.swp_enums import MessageType
-from sekret_wrapper_protocol.exceptions import AesGcmKeyError, HeaderNotCompliteError
+from swp_protocol.sekret_wrapper_protocol import SWP
+from swp_protocol.swp_enums import MessageType
+from swp_protocol.exceptions import AesGcmKeyError, HeaderNotCompliteError
 
 
 class TestSWP:

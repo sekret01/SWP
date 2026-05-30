@@ -1,7 +1,7 @@
 import os
 
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
-from sekret_wrapper_protocol.exceptions import AesGcmKeyError
+from swp_protocol.exceptions import AesGcmKeyError
 
 
 class AesGcmCrypto:

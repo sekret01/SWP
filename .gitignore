@@ -8,3 +8,8 @@ __pycache__/
 # tmp
 *.tmp
 *.tmp.*
+
+# build
+build/
+dist/
+swp.egg-info

@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 
 def readme():
-  with open('README.md', 'r') as f:
+  with open('README.md', 'r', encoding="utf-8") as f:
     return f.read()
 
 
@@ -14,7 +14,7 @@ setup(
   description='protocol for wrapping packets',
   long_description=readme(),
   long_description_content_type='text/markdown',
-  packages=find_packages(include=['sekret_wrapper_protocol', 'sekret_wrapper_protocol.*']),
+  packages=find_packages(include=['swp_protocol', 'swp_protocol.*']),
   install_requires=[
     'cryptography>=48.0.0',
     ],
