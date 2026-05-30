@@ -1,4 +1,4 @@
-from sekret_wrapper_protocol._encoder import AesGcmCrypto, AesGcmKeyError
+from swp_protocol._encoder import AesGcmCrypto, AesGcmKeyError
 import pytest
 
 

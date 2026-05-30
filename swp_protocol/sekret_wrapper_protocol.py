@@ -1,7 +1,7 @@
 import struct
 
-from sekret_wrapper_protocol.exceptions import AesGcmKeyError, HeaderNotCompliteError
-from sekret_wrapper_protocol._encoder import AesGcmCrypto
+from swp_protocol.exceptions import AesGcmKeyError, HeaderNotCompliteError
+from swp_protocol._encoder import AesGcmCrypto
 
 
 class SWP:
