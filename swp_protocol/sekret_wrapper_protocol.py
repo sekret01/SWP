@@ -64,8 +64,6 @@ class SWP:
         target_len = len(target)
         payload_len = len(payload)
 
-        print(f"magic:[{cls.PROTOCOL_MAGIC}], type:[{msg_type}], tglen: [{target_len}], plen:[{payload_len}], tg:[{target}], p:[{payload}]")
-
         header = struct.pack(
             cls.HEADER_FMT,
             cls.PROTOCOL_MAGIC,
