@@ -6,7 +6,7 @@
 ## Установка
 
 ```bash
-pip install swp
+pip install swp-protocol
 ```
 
 ---
@@ -216,7 +216,7 @@ SWP.set_auto_encrypt(False)
 
 ---
 
-### `encode(message) -> bytes`
+### `_encode(message) -> bytes`
 
 Шифрование сообщения с использованием загруженного AES-GCM ключа.
 
@@ -229,7 +229,7 @@ SWP.set_auto_encrypt(False)
 
 ---
 
-### `decode(message) -> bytes`
+### `_decode(message) -> bytes`
 
 Расшифровка сообщения.
 
@@ -244,6 +244,6 @@ SWP.set_auto_encrypt(False)
 
 ## Информация о проекте
 
-- **Версия:** 0.0.3
+- **Версия:** 0.0.4
 - **Python:** 3.8+
 - **Репозиторий:** [github.com/sekret01/SWP](https://github.com/sekret01/SWP.git)

@@ -1,6 +1,9 @@
 # env
 .venv
 
+# ide
+.idea
+
 # cache
 __pycache__/
 .pytest_cache
