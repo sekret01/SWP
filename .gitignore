@@ -12,4 +12,4 @@ __pycache__/
 # build
 build/
 dist/
-swp.egg-info
+*.egg-info
