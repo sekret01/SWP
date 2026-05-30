@@ -8,7 +8,7 @@ def readme():
 
 setup(
   name='swp_protocol',
-  version='0.0.3',
+  version='0.0.4',
   author='Sekret',
   author_email='asinskijp188@gmail.com',
   description='protocol for wrapping packets',
