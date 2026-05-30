@@ -245,5 +245,5 @@ SWP.set_auto_encrypt(False)
 ## Информация о проекте
 
 - **Версия:** 0.0.1
-- **Python:** 3.10+
+- **Python:** 3.8+
 - **Репозиторий:** [github.com/sekret01/SWP](https://github.com/sekret01/SWP.git)
