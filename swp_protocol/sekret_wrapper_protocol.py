@@ -2,6 +2,7 @@ import struct
 
 from swp_protocol.exceptions import AesGcmKeyError, HeaderNotCompliteError
 from swp_protocol._encoder import AesGcmCrypto
+from swp_enums import MessageType
 
 
 class SWP:
@@ -137,6 +138,33 @@ class SWP:
             "target": target,
             "payload": payload
         }
+    
+    @classmethod
+    def create_connect_package(cls, target_address: bytes = b"") -> bytes:
+        """ Создание пакета для подключения к узлу """
+        return cls.pack(
+            msg_type=MessageType.MSG_CONNECT, 
+            target=target_address, 
+            payload=b""
+            )
+
+    @classmethod
+    def create_data_package(cls, data: bytes, target_address: bytes = b"") -> bytes:
+        """ Создание пакета для передачи данных между узлами """
+        return cls.pack(
+            msg_type=MessageType.MSG_DATA, 
+            target=target_address, 
+            payload=data
+        )
+    
+    @classmethod
+    def create_close_package(cls):
+        """ Создание пакета для отключения от узла """
+        return cls.pack(
+            msg_type=MessageType.MSG_CLOSE, 
+            target=b"", 
+            payload=b""
+            )
 
     @classmethod
     def get_full_package_size(cls, buffer: bytes) -> int:
